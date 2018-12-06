@@ -12,7 +12,7 @@ from lib import doc_processor
 ## =========================================================
 
 # load dataset
-filename = 'data/eng_ger.txt'
+filename = 'data/eng_ger_tatoeba.txt'
 doc = doc_processor.load_doc(filename)
 
 # split into english-german pairs
