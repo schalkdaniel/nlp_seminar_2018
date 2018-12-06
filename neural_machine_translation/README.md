@@ -24,8 +24,9 @@ The code used here is for the most part copied from [this post](https://machinel
     - [ ] What sources are available?
     - [ ] How much data are necessary to train a reasonably useful model?
 
-- [ ] [EXTRA] How does word embeddings affect the predictions?
-- [ ] [EXTRA] Available translation tools and what are they using (e.g. Google)?
+- [ ] **[EXTRA]** How does word embeddings affect the predictions?
+- [ ] **[EXTRA]** Available translation tools and what are they using (e.g. Google, DeepL, ...)?
+- [ ] **[EXTRA]** How much computational power do we need to get a reasonably useful model?
 
 ## Data Sources
 
