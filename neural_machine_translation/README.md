@@ -5,29 +5,28 @@
 The code used here is for the most part copied from [this post](https://machinelearningmastery.com/develop-neural-machine-translation-system-keras/). 
 
 1. run `python/clean_data.py`
-2. run `python/train_model.py`
+1. run `python/model_train.py`
+1. run `python/model_evaluate.py`
 
-## Data
+## Interesting Tasks
 
-The dataset is available from the ManyThings.org website, with examples drawn from the Tatoeba Project. The dataset is comprised of German phrases and their English counterparts and is intended to be used with the Anki flashcard software.
+- [ ] What are the challenges in neural machine translation?
 
-** Info **
+- [ ] How does the encoder-decoder model tackle these challenges?
+    - [ ] Why are we using RNNs and LSTMs?
+    - [ ] How flexible are we in extending the architecture (including more layers)?
 
-Check for newest version here:
-  http://www.manythings.org/anki/
-Date of this file:
-  2018-10-27
+- [ ] How to evaluate a neural net for machine translation?
+    - [ ] BLEU score
+    - [ ] Other performance measures?
 
-This data is from the sentences_detailed.csv file from tatoeba.org.
-http://tatoeba.org/files/downloads/sentences_detailed.csv
+- [ ] How does the used dictionary affect the prediction?
+    - [ ] What sources are available?
+    - [ ] How much data are necessary to train a reasonably useful model?
 
-** Terms of Use **
+- [ ] [EXTRA] How does word embeddings affect the predictions?
+- [ ] [EXTRA] Available translation tools and what are they using (e.g. Google)?
 
-See the terms of use.
-These files have been released under the same license as the
-source.
+## Data Sources
 
-http://tatoeba.org/eng/terms_of_use
-http://creativecommons.org/licenses/by/2.0
-
-Attribution: www.manythings.org/anki and tatoeba.org
+- [Tatoeba dataset](data/_about_tatoeba.md)

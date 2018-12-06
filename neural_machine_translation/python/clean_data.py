@@ -36,7 +36,7 @@ for i in range(100):
 raw_dataset = doc_processor.load_clean_sentences('data/english_german.pkl')
 
 # reduce dataset size
-n_sentences = 10000
+n_sentences = 60000
 dataset = raw_dataset[:n_sentences, :]
 
 # define train-test fraction

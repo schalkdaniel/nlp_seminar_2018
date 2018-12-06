@@ -38,3 +38,11 @@ def evaluate_model(model, tokenizer, sources, raw_dataset):
   print('BLEU-2: %f' % corpus_bleu(actual, predicted, weights=(0.5, 0.5, 0, 0)))
   print('BLEU-3: %f' % corpus_bleu(actual, predicted, weights=(0.3, 0.3, 0.3, 0)))
   print('BLEU-4: %f' % corpus_bleu(actual, predicted, weights=(0.25, 0.25, 0.25, 0.25)))
+
+# translate sentence
+def translate_sentence(model, tokenizer, sentence):
+  source = array([sentence])
+  actual, predicted = list(), list()
+  source = source.reshape((1, source.shape[0]))
+  translation = predict_sequence(model, tokenizer, source)
+  return translation 

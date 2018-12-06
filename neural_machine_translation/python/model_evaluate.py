@@ -1,3 +1,5 @@
+import re
+from numpy import array
 from keras.models import load_model
 
 ## Load own modules
@@ -40,9 +42,19 @@ testX = word_embedding.encode_sequences(ger_tokenizer, ger_length, test[:, 1])
 model = load_model('model.h5')
 
 # test on some training sequences
-print('train')
 evaluation.evaluate_model(model, eng_tokenizer, trainX, train)
 
 # test on some test sequences
-print('test')
 evaluation.evaluate_model(model, eng_tokenizer, testX, test)
+
+# translate arbitrary sentence
+
+my_sentence = 'ich gehe heute abend essen'
+my_sentence_we = word_embedding.encode_sequences(ger_tokenizer, ger_length, array([my_sentence]))
+
+for word in re.split('\s+', my_sentence):
+  print('word=[%s], integer=[%s]' % (word, ger_tokenizer.word_index.get(word)))
+
+my_sentence_we
+
+evaluation.predict_sequence(model, eng_tokenizer, my_sentence_we)
