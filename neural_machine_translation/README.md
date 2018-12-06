@@ -4,8 +4,8 @@
 
 The code used here is for the most part copied from [this post](https://machinelearningmastery.com/develop-neural-machine-translation-system-keras/). 
 
-1. run `clean_data.py`
-2. run `train_model.py`
+1. run `python/clean_data.py`
+2. run `python/train_model.py`
 
 ## Data
 
