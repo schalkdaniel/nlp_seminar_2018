@@ -1,0 +1,6 @@
+data/english_german.pkl
+data/english_german_both.pkl
+data/english_german_train.pkl
+data/english_german_test.pkl
+model.h5
+lib/__pycache__/*
