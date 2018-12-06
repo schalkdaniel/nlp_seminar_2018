@@ -40,7 +40,7 @@ n_sentences = 60000
 dataset = raw_dataset[:n_sentences, :]
 
 # define train-test fraction
-train_fraction = 0.9
+train_fraction = 0.8
 n_train = round(train_fraction * n_sentences)
 
 # random shuffle
